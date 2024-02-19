@@ -1,96 +1,145 @@
-body, html
-{
+body,
+html {
   margin: 0%;
   padding: 0%;
   width: 100%;
   height: 100%;
 }
 
-.container
-{
+.container {
+  margin: 0px;
+  padding: 0px;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  /* background-color: red; */
+  background-color: beige;
 }
 
-.left-container
-{
+.left-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  /*cross axis- row -> y direction/vertical, column ->x direction/horizontal*/
+
+  /*y direction  - horizontal*/
+  /* justify-content: flex-start;  */
   width: 50%;
   height: 100%;
-  padding: 50px;
-  background-color: pink;
-  
+  padding-left: 150px;
+  /* background-color: pink; */
 }
-.hello
-{
+
+.hello {
+  /* background-color: aqua; */
   font-size: 64px;
   font-family: Inter;
   font-weight: thin;
 }
-.me
-{
+
+.me {
   font-size: 64px;
   font-family: Inter;
   font-weight: mixed;
 }
-span
-{
+
+span {
   font-size: 64px;
   font-family: Inter;
   font-weight: bold;
 }
-.aspiring
-{
-  margin-left: 50%;
+
+.role {
+
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+}
+
+.aspiring {
+  align-self: flex-end;
   font-size: 35px;
   font-family: Inter;
   font-weight: medium;
 }
-.developer
-{
+
+.developer {
+  align-self: flex-start;
   font-size: 64px;
   font-family: Inter;
   font-weight: light;
 }
 
-.right-container
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 100%;
-  padding: 50px;
-  background-color: orange;
-  
-}
-.picture
-{
+.right-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: orange; */
+
 }
-.picture .me 
-{
+
+.picture {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   width: 70%;
   height: 70%;
+  margin-left: -100px;
+  margin-top: -200px;
 }
-.next-page
-{
+/* 
+.imageMe{
+  background-color: brown;
+  opacity: 50%;
+} */
+
+.arrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px; /* Adjust thickness and size as needed */
+  border-color: #000 transparent transparent transparent;
+}
+.arrow::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Adjust based on border-width */
+  left: -20px; /* Adjust based on border-width */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px; /* Adjust thickness and size as needed */
+  border-color: #ee0808 transparent transparent transparent;
+}
+.arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Adjust based on border-width */
+  left: -20px; /* Adjust based on border-width */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 20px 0 20px; /* Adjust thickness and size as needed */
+  border-color: transparent transparent #000 transparent;
+}
+
+.next-page {
   background-color: black;
+  margin-left: auto;
+  margin-right: 100px;
   width: 2px;
-  height: 500px;
+  height: 90%;
 }
-.first-dot
-{
+
+.first-dot {
   background-color: grey;
   width: 30px;
   height: 30px;
@@ -98,8 +147,8 @@ span
   top: 0%;
   left: 0%;
 }
-.second-dot
-{
+
+.second-dot {
   background-color: rgb(229, 106, 106);
   width: 30px;
   height: 30px;
@@ -107,8 +156,8 @@ span
   top: 30%;
   left: 30%;
 }
-.third-dot
-{
+
+.third-dot {
   background-color: rgb(66, 155, 169);
   width: 30px;
   height: 30px;
@@ -116,8 +165,8 @@ span
   top: 50%;
   left: 50%;
 }
-.fourth-dot
-{
+
+.fourth-dot {
   background-color: rgb(117, 181, 54);
   width: 30px;
   height: 30px;
