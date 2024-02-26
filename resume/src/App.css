@@ -30,7 +30,7 @@ html {
   width: 50%;
   height: 100%;
   padding-left: 150px;
-  /* background-color: pink; */
+  background-color: pink;
 }
 
 .hello {
@@ -53,7 +53,6 @@ span {
 }
 
 .role {
-
   /* background-color: azure; */
   display: flex;
   flex-direction: column;
@@ -73,6 +72,95 @@ span {
   font-weight: light;
 }
 
+@media (max-width: 1200px) , (max-height: 800px)
+{
+  .hello,
+  .me,
+  span,
+  .developer {
+    /* background-color: green; */
+    font-size: 50px;
+  }
+
+  .aspiring {
+    /* background-color: blue; */
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) , (max-height: 600px) {
+
+  .hello,
+  .me,
+  span,
+  .developer {
+    /* background-color: green; */
+    font-size: 40px;
+  }
+
+  .aspiring {
+    /* background-color: blue; */
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) , (max-height: 500px) {
+
+  .hello,
+  .me,
+  span,
+  .developer {
+    /* background-color: green; */
+    font-size: 30px;
+  }
+
+  .aspiring {
+    /* background-color: blue; */
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) , (max-height: 400px) {
+
+  .hello,
+  .me,
+  span,
+  .developer {
+    /* background-color: green; */
+    font-size: 20px;
+  }
+
+  .aspiring {
+    /* background-color: blue; */
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) , (max-height: 300px) {
+
+  .hello,
+  .me,
+  span,
+  .developer {
+    /* background-color: green; */
+    font-size: 15px;
+  }
+
+  .aspiring {
+    /* background-color: blue; */
+    font-size: 10px;
+  }
+}
+
+@media (width <=500px) , (height <=500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 .right-container {
   display: flex;
   flex-direction: row;
@@ -80,7 +168,7 @@ span {
   align-items: center;
   width: 100%;
   height: 100%;
-  /* background-color: orange; */
+  background-color: orange;
 
 }
 
@@ -91,43 +179,97 @@ span {
   justify-content: flex-start;
   width: 70%;
   height: 70%;
-  margin-left: -100px;
-  margin-top: -200px;
+  margin-left: 0px;
+  margin-top: -100px;
 }
-/* 
+
+
 .imageMe{
-  background-color: brown;
+  /* background-color: brown; */
   opacity: 50%;
-} */
+}
+
+@media (max-width: 1500px) , (max-height: 1500px){
+  .picture {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 1300px) , (max-height: 1300px) {
+  .picture {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 1000px) , (max-height: 1000px) {
+  .picture {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 800px) , (max-height: 800px) {
+  .picture {
+    width: 55%;
+    height: 55%;
+  }
+}
+
+@media (max-width: 600px) , (max-height: 600px) {
+  .picture {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (width <=400px) , (height <=400px) {
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+} 
 
 .arrow {
   position: relative;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 20px 20px 0 20px; /* Adjust thickness and size as needed */
+  border-width: 20px 20px 0 20px;
+  /* Adjust thickness and size as needed */
   border-color: #000 transparent transparent transparent;
 }
+
 .arrow::before {
   content: '';
   position: absolute;
-  top: -20px; /* Adjust based on border-width */
-  left: -20px; /* Adjust based on border-width */
+  top: -20px;
+  /* Adjust based on border-width */
+  left: -20px;
+  /* Adjust based on border-width */
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 20px 20px 0 20px; /* Adjust thickness and size as needed */
+  border-width: 20px 20px 0 20px;
+  /* Adjust thickness and size as needed */
   border-color: #ee0808 transparent transparent transparent;
 }
+
 .arrow::after {
   content: '';
   position: absolute;
-  bottom: -10px; /* Adjust based on border-width */
-  left: -20px; /* Adjust based on border-width */
+  bottom: -10px;
+  /* Adjust based on border-width */
+  left: -20px;
+  /* Adjust based on border-width */
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 20px 0 20px; /* Adjust thickness and size as needed */
+  border-width: 10px 20px 0 20px;
+  /* Adjust thickness and size as needed */
   border-color: transparent transparent #000 transparent;
 }
 
@@ -137,40 +279,16 @@ span {
   margin-right: 100px;
   width: 2px;
   height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.first-dot {
+.first-dot, .second-dot, .third-dot, .fourth-dot {
   background-color: grey;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  top: 0%;
-  left: 0%;
-}
-
-.second-dot {
-  background-color: rgb(229, 106, 106);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top: 30%;
-  left: 30%;
-}
-
-.third-dot {
-  background-color: rgb(66, 155, 169);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-}
-
-.fourth-dot {
-  background-color: rgb(117, 181, 54);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top: 70%;
-  left: 70%;
+  border: 1px solid grey;
 }

@@ -16,12 +16,14 @@ function App() {
           <img src="images/resume.png" class="imageMe" />
         </div>
         <div class = "next-page">
-
+    `     <div class = "next-page">
+            <button class = "first-dot"></button>
+            <button class = "second-dot"></button>
+            <button class = "third-dot"></button>
+            <button class = "fourth-dot"></button>
+          </div> `
           </div>
-        {/* <div class="picture">
-          <img src="images/resume.png" class="imageMe" />
-         
-        </div> */}
+       
       </div>
     </div>
   );
@@ -29,9 +31,4 @@ function App() {
 
 export default App;
 
-{/* <div class = "next-page">
-            <div class = "first-dot"></div>
-            <div class = "second-dot"></div>
-            <div class = "third-dot"></div>
-            <div class = "fourth-dot"></div>
-          </div> */}
+ 
