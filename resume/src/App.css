@@ -6,6 +6,14 @@ html {
   height: 100%;
 }
 
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .container {
   margin: 0px;
   padding: 0px;
@@ -14,40 +22,93 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   background-color: beige;
+  
 }
+
+.firstPage {
+  background-color: gray;
+  width: 950px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
 
 .left-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   /*cross axis- row -> y direction/vertical, column ->x direction/horizontal*/
 
   /*y direction  - horizontal*/
   /* justify-content: flex-start;  */
-  width: 50%;
+  /* width: 50; */
+  /* width:500px; */
   height: 100%;
-  padding-left: 150px;
-  background-color: pink;
+  /* padding-left: 150px; */
+  /* background-color: pink; */
 }
+
+
+
+.right-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 500px;
+  height: 700px;
+  /* background-color: orange; */
+
+}
+
+.picture {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  height: 70%;
+  margin-left: -100px;
+  margin-top: -100px;
+  /* object-fit: cover;ru */
+}
+
+
+.imageMe {
+  /* background-color: brown; */
+  /* opacity: 50%; */
+}
+
 
 .hello {
   /* background-color: aqua; */
-  font-size: 64px;
+  font-size: 25px;
   font-family: Inter;
   font-weight: thin;
+  align-self: flex-start;
 }
 
 .me {
-  font-size: 64px;
+  /* width: 700px; */
+  font-size: 32px;
   font-family: Inter;
   font-weight: mixed;
+  align-self: flex-start;
 }
 
 span {
-  font-size: 64px;
+  white-space: nowrap;
+  font-size: 40px;
   font-family: Inter;
   font-weight: bold;
 }
@@ -59,179 +120,58 @@ span {
 }
 
 .aspiring {
+
   align-self: flex-end;
-  font-size: 35px;
+  font-size: 25px;
   font-family: Inter;
   font-weight: medium;
 }
 
 .developer {
   align-self: flex-start;
-  font-size: 64px;
+  font-size: 32px;
   font-family: Inter;
   font-weight: light;
 }
 
-@media (max-width: 1200px) , (max-height: 800px)
-{
-  .hello,
+
+
+
+@media screen and (max-width: 480px) {
+
+  /* .container {
+    width: 100%;
+  } */
+  /* Styles specific to mobile screens */
+  .firstPage {
+    align-self: flex-start;
+    /* width: 100px; */
+    padding-top: 25px;
+    /* background-color: red; */
+    overflow: hidden;
+  }
+
+  .right-container {
+    width: 480px;
+  }
+
+  /* .hello {
+    font-size: 10px;
+
+  }
+
   .me,
-  span,
   .developer {
-    /* background-color: green; */
-    font-size: 50px;
-  }
-
-  .aspiring {
-    /* background-color: blue; */
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 1000px) , (max-height: 600px) {
-
-  .hello,
-  .me,
-  span,
-  .developer {
-    /* background-color: green; */
-    font-size: 40px;
-  }
-
-  .aspiring {
-    /* background-color: blue; */
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 800px) , (max-height: 500px) {
-
-  .hello,
-  .me,
-  span,
-  .developer {
-    /* background-color: green; */
-    font-size: 30px;
-  }
-
-  .aspiring {
-    /* background-color: blue; */
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 600px) , (max-height: 400px) {
-
-  .hello,
-  .me,
-  span,
-  .developer {
-    /* background-color: green; */
-    font-size: 20px;
-  }
-
-  .aspiring {
-    /* background-color: blue; */
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 400px) , (max-height: 300px) {
-
-  .hello,
-  .me,
-  span,
-  .developer {
-    /* background-color: green; */
-    font-size: 15px;
-  }
-
-  .aspiring {
-    /* background-color: blue; */
     font-size: 10px;
   }
-}
 
-@media (width <=500px) , (height <=500px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-
-.right-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: orange;
+  span {
+    font-size: 15px;
+  } */
 
 }
 
-.picture {
-  /* background-color: aqua; */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 70%;
-  height: 70%;
-  margin-left: 0px;
-  margin-top: -100px;
-}
 
-
-.imageMe{
-  /* background-color: brown; */
-  opacity: 50%;
-}
-
-@media (max-width: 1500px) , (max-height: 1500px){
-  .picture {
-    width: 70%;
-    height: 70%;
-  }
-}
-
-@media (max-width: 1300px) , (max-height: 1300px) {
-  .picture {
-    width: 70%;
-    height: 70%;
-  }
-}
-
-@media (max-width: 1000px) , (max-height: 1000px) {
-  .picture {
-    width: 60%;
-    height: 60%;
-  }
-}
-
-@media (max-width: 800px) , (max-height: 800px) {
-  .picture {
-    width: 55%;
-    height: 55%;
-  }
-}
-
-@media (max-width: 600px) , (max-height: 600px) {
-  .picture {
-    width: 40%;
-    height: 40%;
-  }
-}
-
-@media (width <=400px) , (height <=400px) {
-  .right-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-} 
 
 .arrow {
   position: relative;
@@ -285,7 +225,10 @@ span {
   align-items: flex-start;
 }
 
-.first-dot, .second-dot, .third-dot, .fourth-dot {
+.first-dot,
+.second-dot,
+.third-dot,
+.fourth-dot {
   background-color: grey;
   width: 30px;
   height: 30px;
