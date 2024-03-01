@@ -56,7 +56,7 @@ function App() {
             </div>
             <div className="right-container">
               <div className="picture">
-                <img src="%PUBLIC_URL%/images/resume.png" className="imageMe" />
+                <img src="images/resume.png" className="imageMe" />
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ function App() {
 
             <div className="right-container">
               <div className="picture">
-                <img src="%PUBLIC_URL%/images/resume.png" className="imageMe" />
+                <img src="images/resume.png" className="imageMe" />
               </div>
             </div>
           </div>
