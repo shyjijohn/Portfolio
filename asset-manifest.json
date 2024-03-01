@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%3Chttps://swapnaAngel.github.io/Portfolio%3E/static/css/main.50e8e3a0.css",
+    "main.js": "/%3Chttps://swapnaAngel.github.io/Portfolio%3E/static/js/main.00eb9ed8.js",
+    "index.html": "/%3Chttps://swapnaAngel.github.io/Portfolio%3E/index.html",
+    "main.50e8e3a0.css.map": "/%3Chttps://swapnaAngel.github.io/Portfolio%3E/static/css/main.50e8e3a0.css.map",
+    "main.00eb9ed8.js.map": "/%3Chttps://swapnaAngel.github.io/Portfolio%3E/static/js/main.00eb9ed8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50e8e3a0.css",
+    "static/js/main.00eb9ed8.js"
+  ]
+}
