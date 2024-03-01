@@ -1,6 +1,27 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './App.css';
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = useState(false);
+  const domRef = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        setVisible(entry.isIntersecting);
+      });
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
 
 function App() {
 
@@ -20,46 +41,52 @@ function App() {
   // }, []); // Empty dependency array means this effect runs only once, similar to componentDidMount and componentWillUnmount
 
 
-
-
-
-
   return (
-    <div class="app">
-      <div class="container">
-        <div class="firstPage">
-          <div class="left-container">
-            <div class="hello">HELLO</div>
-            <div class="me">I'm <span>SHYJI JOHN</span></div>
-            <div class="role">
-              <div class="aspiring">Aspiring</div>
-              <div class="developer">Frontend developer</div>
+    <div className="app">
+      <div className="container">
+        <FadeInSection>
+          <div className="firstPage">
+            <div className="left-container">
+              <div className="hello">HELLO</div>
+              <div className="me">I'm <span>SHYJI JOHN</span></div>
+              <div className="role">
+                <div className="aspiring">Aspiring</div>
+                <div className="developer">Frontend developer</div>
+              </div>
+            </div>
+            <div className="right-container">
+              <div className="picture">
+                <img src="%PUBLIC_URL%/images/resume.png" className="imageMe" />
+              </div>
             </div>
           </div>
-          <div class="right-container">
-            <div class="picture">
-              <img src="images/resume.png" class="imageMe" />
-            </div>
-          </div>
-        </div>
+
+        </FadeInSection>
+
       </div>
-      {/* <div class="container">
-        <div class="firstPage">
-          <div class="left-container">
-            <div class="hello">HELLO</div>
-            <div class="me">I'm <span>SHYJI JOHN</span></div>
-            <div class="role">
-              <div class="aspiring">Aspiring</div>
-              <div class="developer">Frontend developer</div>
+      <div className="container">
+        <FadeInSection>
+          <div className="firstPage">
+            <div className="left-container">
+              <div className="hello">HELLO</div>
+              <div className="me">I'm <span>SHYJI JOHN</span></div>
+              <div className="role">
+                <div className="aspiring">Aspiring</div>
+                <div className="developer">Frontend developer</div>
+              </div>
+            </div>
+
+            <div className="right-container">
+              <div className="picture">
+                <img src="%PUBLIC_URL%/images/resume.png" className="imageMe" />
+              </div>
             </div>
           </div>
-          <div class="right-container">
-            <div class="picture">
-              <img src="images/resume.png" class="imageMe" />
-            </div>
-          </div>
-        </div>
-      </div> */}
+
+        </FadeInSection>
+
+
+      </div>
     </div>
   );
 }
