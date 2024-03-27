@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 function App() {
 
   return (
-    <div className="app">
+    <div className="flex flex-col justify-between items-center">
       <Home/>
     </div>
   );
