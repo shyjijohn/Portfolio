@@ -5,6 +5,17 @@ import Container from '../Layout/Container'
 import Intro from '../Intro'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MailIcon from '@mui/icons-material/Mail';
+
+function ButtonWithIcon({ children, link }) {
+    return (
+        <a href={link}>
+            <button className='p-1 mr-3 hover:bg-slate-200 hover:shadow-xl rounded-3xl'>
+                {children}
+            </button>
+        </a>
+    )
+}
 
 export default function Home() {
 
@@ -16,8 +27,16 @@ export default function Home() {
                     <img src="images/resume.png" className='wiggle object-cover w-[850px] h-[700px]' />
                 </div>
                 <div className='self-end pr-20 pb-5'>
-                    <GitHubIcon className='mr-3' />
-                    <LinkedInIcon />
+
+                    <ButtonWithIcon link={"mailto:Shyjijohn90@gmail.com"}>
+                        <MailIcon />
+                    </ButtonWithIcon>
+                    <ButtonWithIcon link={"https://github.com/shyjijohn"}>
+                        <GitHubIcon />
+                    </ButtonWithIcon>
+                    <ButtonWithIcon link={"https://www.linkedin.com/in/shyji90"}>
+                        <LinkedInIcon />
+                    </ButtonWithIcon>
                 </div>
             </div>
         </Container>

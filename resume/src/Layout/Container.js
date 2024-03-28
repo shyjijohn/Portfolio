@@ -6,9 +6,9 @@ export default function Container({ children }) {
 
     return (
         <div className='
-        w-full h-screen flex justify-center md:p-20'>
-            <div className='bg-gray-500 rounded-xl shadow-2xl min-w-96 w-full 2xl:max-w-screen-xl 
-                            h-full flex flex-col lg:flex-row justify-normal items-center'>
+        w-full h-screen flex justify-center p-2 lg:p-20'>
+            <div className='bg-gray-100 rounded-xl shadow-2xl min-w-96 w-full 2xl:max-w-screen-xl 
+                            h-full flex flex-col lg:flex-row justify-center items-center'>
                 {children}
             </div>
         </div>
