@@ -20,12 +20,12 @@ export default function Skills() {
     return (
 
         <Container>
-            <div className=' flex flex-col justify-center items-center self-start pt-3 md:pt-20'>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-3 md:mt-10">What I know ?</h2>
+            <div className='flex flex-col justify-center items-center'>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ">What I know ?</h2>
                 <h2 className="text-xl font-normal tracking-tight text-gray-900 sm:text-xl ">as a</h2>
                 <h2 className="text-2xl font-normal tracking-tight text-gray-900 sm:text-2xl ">Frontend developer</h2>
 
-                <div className='flex flex-row items-stretch h-full md:p-10'>
+                <div className='flex flex-row items-stretch h-full p-10'>
 
                     <div className='bg-white ml-3 mr-3 w-1/2 flex flex-col items-center justify-start rounded-xl border-2 p-5'>
                         <div className='text-xl font-semibold mb-3 '> Tech stack I use</div>

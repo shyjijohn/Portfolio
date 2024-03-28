@@ -15,7 +15,7 @@ export default function Contact() {
                 <div className=' flex-grow flex flex-col justify-center items-center p-5 self-center '>
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-3 ">Contact me</h2>
                     <h2 className="text-xl font-normal tracking-tight text-gray-900 mt-5 ">Let's build something amazing together!</h2>
-                    <h2 className="text-2xl font-normal tracking-tight text-gray-900 ">Reach out to discuss your next project or just to say hi</h2>
+                    <h2 className="text-xl font-normal tracking-tight text-gray-900 ">Reach out to discuss your next project or just to say hi</h2>
                     <div className='bg-white border-2 rounded-2xl p-5 mt-10 flex flex-col items-start justify-start'>
 
                         <div className='m-3  flex flex-row'>

@@ -4,24 +4,35 @@ import React from 'react'
 import Container from '../Layout/Container'
 import GitHub from '@mui/icons-material/GitHub'
 
-function Project() {
+function Project({ imageUrl, githubUrl, liveDemoUrl }) {
+
     return (
         <div className=' bg-white w-56 h-72 rounded-2xl flex flex-col items-center justify-center hover:border-4  m-3'>
             <div className='bg-blue-300 m-3 self-stretch h-56'>
-                <img className='w-full'/>
+                <img className='w-full' src={imageUrl} />
             </div>
             <div className='flex flex-row mb-2'>
-                <a href="https:://github.com" className='m-1'>
-                    <button className='p-2 border-2 hover:bg-slate-200 hover:shadow-xl rounded-3xl flex flex-row items-center'>
-                        <GitHub />
-                        <h1>Github</h1>
-                    </button>
-                </a>
-                <a href="https:://github.com" className='m-1'>
-                    <button className='p-2 border-2 hover:bg-slate-200 hover:shadow-xl rounded-3xl flex flex-row items-center'>
-                        <h1>Live Demo</h1>
-                    </button>
-                </a>
+
+                {githubUrl != null && (
+                    <>
+                        <a href={githubUrl} className='m-1'>
+                            <button className='p-2 border-2 hover:bg-slate-200 hover:shadow-xl rounded-3xl flex flex-row items-center'>
+                                <GitHub />
+                                <h1>Github</h1>
+                            </button>
+                        </a>
+                    </>
+                )}
+
+                {liveDemoUrl != null && (
+                    <>
+                        <a href={liveDemoUrl} className='m-1'>
+                            <button className='p-2 border-2 hover:bg-slate-200 hover:shadow-xl rounded-3xl flex flex-row items-center'>
+                                <h1>Live Demo</h1>
+                            </button>
+                        </a>
+                    </>
+                )}
             </div>
         </div>
     )
