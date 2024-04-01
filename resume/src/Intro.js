@@ -10,7 +10,6 @@ export default function Intro() {
                                  font-bold whitespace-nowrap  '> SHYJI JOHN</span>
             </div>
             <div className="flex flex-col">
-                <div className="self-end text-lg md:text-2xl font-light xl:mt-2">Aspiring</div>
                 <div className="self-start text-xl md:text-4xl font-light xl:mt-4 whitespace-nowrap">Frontend developer</div>
             </div>
         </div>
