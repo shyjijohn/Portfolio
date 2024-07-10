@@ -33,9 +33,11 @@ export default function Skills() {
                             <StackComp value="HTML" />
                             <StackComp value="CSS" />
                             <StackComp value="Javascript" />
+                            <StackComp value="Typescript" />
                             <StackComp value="Tailwind CSS" />
                             <StackComp value="React framework" />
                             <StackComp value="SQL" />
+                            <StackComp value="MySQL" />
                             <StackComp value="Material design (MUI)" />
                             <StackComp value="C#" />
                             <StackComp value="WPF" />

@@ -25,7 +25,7 @@ export default function Home() {
             <div className=' flex flex-col h-full w-full justify-between overflow-hidden'>
                 <div className=' self-start w-full h-5/6 flex flex-col justify-start'>
                     <img src="images/resume.png" className='wiggle object-cover w-[850px] h-[700px]' />
-                    <div class="vapour bg-red-500 h-4 w-4">
+                    <div class="h-4 w-4">
                          <span class="--i:1;"></span>
                          <span class="--i:3;"></span>
                          <span class="--i:5;"></span>
