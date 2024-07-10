@@ -51,6 +51,7 @@ export default function Projects() {
                     <Project title={"Solar system"} imageUrl={"images/SolarSystem.png"} githubUrl={"https://github.com/shyjijohn/Solar-System"} liveDemoUrl={"https://shyjijohn.github.io/Solar-System/"} />
                     <Project title={"Google clone"} imageUrl={"images/Googleclone.png"} githubUrl={"https://github.com/shyjijohn/Google-Clone"} liveDemoUrl={"https://shyjijohn.github.io/Google-Clone/"} />
                     <Project title={"Amazon clone"} imageUrl={"images/Amazonclone.png"} githubUrl={"https://github.com/shyjijohn/Amazon"} liveDemoUrl={"https://shyjijohn.github.io/Amazon/"} />
+                    <Project title={"Gram Biller"} imageUrl={"images/Amazonclone.png"} githubUrl={"https://github.com/shyjijohn/Gram-Biller"} liveDemoUrl={"https://shyjijohn.github.io/Gram-Biller/"} />
                 </div>
             </div>
 
