@@ -20,7 +20,7 @@ export default function Contact() {
 
                         <div className='m-3  flex flex-row'>
                             <MailIcon className='mr-3 scale-150' />
-                            <a className='hover:underline hover:font-semibold mr-3' href="mailto:Shyjijohn90@gmail.com">Shyjijohn90@gmail.com</a>
+                            <a className='hover:underline hover:font-semibold mr-3' href="mailto:shyjijohn90@gmail.com">Shyjijohn90@gmail.com</a>
                             {/* <ContentCopyIcon /> */}
                         </div>
                         <div className='m-3  flex flex-row'>
