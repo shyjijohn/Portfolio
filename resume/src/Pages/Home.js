@@ -56,7 +56,7 @@ export default function Home() {
                 </div>
                 <div className='self-end pr-20 pb-5'>
 
-                    <ButtonWithIcon link={"mailto:shyjijohn90@gmail.com"}>
+                    <ButtonWithIcon link={"https://mailto:shyjijohn90@gmail.com"}>
                         <MailIcon />
                     </ButtonWithIcon>
                     <ButtonWithIcon link={"https://github.com/shyjijohn"}>
