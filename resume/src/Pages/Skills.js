@@ -38,10 +38,10 @@ export default function Skills() {
                             <StackComp value="React framework" />
                             <StackComp value="SQL" />
                             <StackComp value="MySQL" />
-                            <StackComp value="Material design (MUI)" />
-                            <StackComp value="Framer Motion" />
-                            <StackComp value="C#" />
-                            <StackComp value="WPF" />
+                            <StackComp value="Material design (MUI) " />
+                            <StackComp value="Framer Motion " />
+                            <StackComp value="C# " />
+                            <StackComp value="WPF " />
                         </div>
 
                     </div>
