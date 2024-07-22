@@ -23,7 +23,7 @@ export default function Skills() {
             <div className='flex flex-col justify-center items-center'>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ">What I know ?</h2>
                 <h2 className="text-xl font-normal tracking-tight text-gray-900 sm:text-xl ">as a</h2>
-                <h2 className="text-2xl font-normal tracking-tight text-gray-900 sm:text-2xl ">Frontend developer</h2>
+                <h2 className="text-2xl font-normal tracking-tight text-gray-900 sm:text-2xl ">Full Stack developer</h2>
 
                 <div className='flex flex-row items-stretch h-full p-10'>
 
@@ -39,19 +39,10 @@ export default function Skills() {
                             <StackComp value="SQL" />
                             <StackComp value="MySQL" />
                             <StackComp value="Material design (MUI)" />
+                            <StackComp value="Framer Motion" />
                             <StackComp value="C#" />
                             <StackComp value="WPF" />
                         </div>
-
-                        {/* <ul>
-                                <li > HTML</li>
-                                <li > CSS</li>
-                                <li > Javascript</li>
-                                <li > Tailwind CSS</li>
-                                <li > React framework</li>
-                                <li > SQL</li>
-                                <li > Material design (MUI)</li>
-                            </ul> */}
 
                     </div>
                     <div className='bg-white self-stretch mr-3 w-1/2 flex flex-col items-center justify-start  rounded-xl border-2  p-5'>
