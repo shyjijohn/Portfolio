@@ -7,7 +7,7 @@ export default function Container({ children }) {
     return (
         <div className='
         w-full h-screen flex justify-center p-2 lg:p-20 min-h-[600px]'>
-            <div className='bg-gray-100 rounded-xl shadow-2xl min-w-96 w-full min-h-[600px] h-full 2xl:max-w-screen-xl 
+            <div className='bg-gray-100 rounded-xl shadow-2xl min-w-96 w-full min-h-[500px] h-full 2xl:max-w-screen-xl 
                              flex flex-col lg:flex-row justify-center items-center'>
                 {children}
             </div>
