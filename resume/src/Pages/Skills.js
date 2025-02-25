@@ -20,14 +20,6 @@ export default function Skills() {
     return (
 
         <Container>
-
-
-{/* <div className='w-full h-full flex flex-col justify-start items-center mr-10 ml-10'>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-3 md:mt-10">Projects</h2>
-                <div className=' w-full h-full flex flex-wrap justify-evenly pt-4 overflow-auto' > */}
-
-
-
             <div className='w-full h-full flex flex-col justify-center items-center mt-10 mr-10 ml-10 overflow-auto'>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-40 md:mt-10">What I know ?</h2>
                 <h2 className="text-xl font-normal tracking-tight text-gray-900 sm:text-xl ">as a</h2>
