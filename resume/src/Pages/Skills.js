@@ -20,7 +20,7 @@ export default function Skills() {
     return (
 
         <Container>
-            <div className='w-full h-full flex flex-col justify-center items-center mt-10 mr-10 ml-10 overflow-auto'>
+            <div className='w-full h-full flex flex-col justify-center items-center mr-10 ml-10 overflow-auto'>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-10">What I know ?</h2>
                 <h2 className="text-xl font-normal tracking-tight text-gray-900 sm:text-xl ">as a</h2>
                 <h2 className="text-2xl font-normal tracking-tight text-gray-900 sm:text-2xl ">Full Stack developer</h2>

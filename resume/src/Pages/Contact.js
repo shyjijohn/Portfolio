@@ -30,7 +30,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <h2 className="text-md mb-1 self-center font-normal tracking-tight text-gray-900 ">Copyright © 2024 Shyji John. All Rights Reserved.</h2>
+                <h2 className="text-md mb-1 self-center font-normal tracking-tight text-gray-900 ">Copyright © 2025 Shyji John. All Rights Reserved.</h2>
             </div>
         </Container>
     )
