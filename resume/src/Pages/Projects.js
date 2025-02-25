@@ -1,17 +1,50 @@
 
 
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../Layout/Container'
 import GitHub from '@mui/icons-material/GitHub'
 
-function Project({ title, imageUrl, githubUrl, liveDemoUrl }) {
+function Project({ title, imageUrl, githubUrl, liveDemoUrl, notes, images }) {
+
+    const [modalImages, setModalImages] = useState([]);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = (images) => {
+        setModalImages(images);
+        setIsOpen(true);
+        Navigate('/gallery')
+    };
+
+    const closeModal = () => setIsOpen(false);
+
 
     return (
         <div className=' bg-white w-56 h-80 rounded-2xl flex flex-col items-center justify-center hover:border-4  m-3'>
             <h1 className='self-start pl-4' >{title}</h1>
             <div className='bg-slate-100 rounded-2xl mx-3 m-1 self-stretch h-56'>
-                <img className='w-full object-contain h-full p-1' src={imageUrl} />
+                <img className='w-full object-contain h-full p-1' src={imageUrl}
+                onClick={() => openModal(images)}
+                />
             </div>
+
+
+            {/* <button onClick={openModal(images)}>hi</button> */}
+
+            {isOpen && (
+                <>
+                    
+                    <div onClick={closeModal} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0 }}>
+                        <div onClick={e => e.stopPropagation()}>
+                            <button onClick={closeModal}>Close</button>
+                            {modalImages.map((src, index) => (
+                                <img key={index} src={src} alt={`modal-${index}`} />
+                            ))}
+                        </div>
+                    </div>
+                </>
+            )}
+
+
             <div className='flex flex-row mb-1'>
 
                 {githubUrl != null && (
@@ -34,6 +67,8 @@ function Project({ title, imageUrl, githubUrl, liveDemoUrl }) {
                         </a>
                     </>
                 )}
+
+                <h1><center>{notes}</center></h1>
             </div>
         </div>
     )
@@ -49,6 +84,10 @@ export default function Projects() {
                 <div className=' w-full h-full flex flex-wrap justify-evenly pt-4 overflow-auto' >
                     <Project title={"Gram Biller"} imageUrl={"images/gram_biller.png"} githubUrl={"https://github.com/shyjijohn/Gram-Biller"} liveDemoUrl={"https://shyjijohn.github.io/Gram-Biller/"} />
                     <Project title={"Rate grapher"} imageUrl={"images/RateGrapher.png"} githubUrl={"https://github.com/shyjijohn/Currency-Converter"} liveDemoUrl={"https://shyjijohn.github.io/Currency-Converter/"} />
+                    <Project title={"Tour Project"} imageUrl={"images/image1.png"} notes={"* This is in development mode"} images={['image1.png', 'image2.png', 'image3.png']} />
+                    {/* <Project title={"Solar system"} imageUrl={"images/SolarSystem.png"} githubUrl={"https://github.com/shyjijohn/Solar-System"} liveDemoUrl={"https://shyjijohn.github.io/Solar-System/"} /> */}
+                    {/* <Project title={"Amazon clone"} imageUrl={"images/Amazonclone.png"} githubUrl={"https://github.com/shyjijohn/Amazon"} liveDemoUrl={"https://shyjijohn.github.io/Amazon/"} /> */}
+                    {/* <Project title={"Google clone"} imageUrl={"images/Googleclone.png"} githubUrl={"https://github.com/shyjijohn/Google-Clone"} liveDemoUrl={"https://shyjijohn.github.io/Google-Clone/"} /> */}
                 </div>
             </div>
         </Container>
