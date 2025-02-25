@@ -49,9 +49,6 @@ export default function Projects() {
                 <div className=' w-full h-full flex flex-wrap justify-evenly pt-4 overflow-auto' >
                     <Project title={"Gram Biller"} imageUrl={"images/gram_biller.png"} githubUrl={"https://github.com/shyjijohn/Gram-Biller"} liveDemoUrl={"https://shyjijohn.github.io/Gram-Biller/"} />
                     <Project title={"Rate grapher"} imageUrl={"images/RateGrapher.png"} githubUrl={"https://github.com/shyjijohn/Currency-Converter"} liveDemoUrl={"https://shyjijohn.github.io/Currency-Converter/"} />
-                    <Project title={"Solar system"} imageUrl={"images/SolarSystem.png"} githubUrl={"https://github.com/shyjijohn/Solar-System"} liveDemoUrl={"https://shyjijohn.github.io/Solar-System/"} />
-                    {/* <Project title={"Amazon clone"} imageUrl={"images/Amazonclone.png"} githubUrl={"https://github.com/shyjijohn/Amazon"} liveDemoUrl={"https://shyjijohn.github.io/Amazon/"} /> */}
-                    {/* <Project title={"Google clone"} imageUrl={"images/Googleclone.png"} githubUrl={"https://github.com/shyjijohn/Google-Clone"} liveDemoUrl={"https://shyjijohn.github.io/Google-Clone/"} /> */}
                 </div>
             </div>
         </Container>
