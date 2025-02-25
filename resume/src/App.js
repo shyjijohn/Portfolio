@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
-import GalleryPage from './Pages/GalleryPage';
+import TourlyUIGalleryPage from './Pages/GalleryPage';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
             <Contact/> 
           </>
           } />
-        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/gallery" element={<TourlyUIGalleryPage />} />
       </Routes>
     </Router>
     </div>

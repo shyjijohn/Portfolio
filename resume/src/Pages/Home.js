@@ -24,8 +24,8 @@ export default function Home() {
             <Intro />
             <div className=' flex flex-col h-full w-full justify-between overflow-hidden'>
                 <div className=' self-start w-11/12 h-5/6 flex flex-col justify-start'>
-                    <img src="images/resume.png" className='wiggle object-cover w-[850px] h-[700px]' />
-                    <div class="h-4 w-4">
+                    <img src="images/resume.png" className='wiggle object-cover w-full pl-10 lg:w-[850px] h-[700px]' />
+                    {/* <div class="h-4 w-4">
                          <span class="--i:1;"></span>
                          <span class="--i:3;"></span>
                          <span class="--i:5;"></span>
@@ -46,7 +46,7 @@ export default function Home() {
                          <span class="--i:10;"></span>
                          <span class="--i:13;"></span>
                          <span class="--i:14;"></span>
-                    </div>
+                    </div> */}
 
                     {/* <div class="relative">
                         <div class="absolute w-4 h-4 bg-blue-500 rounded-full -top-2 left-4 animate-ping"></div>
@@ -62,7 +62,7 @@ export default function Home() {
                     <ButtonWithIcon link={"https://github.com/shyjijohn"}>
                         <GitHubIcon />
                     </ButtonWithIcon>
-                    <ButtonWithIcon link={"https://www.linkedin.com/in/shyji90"}>
+                    <ButtonWithIcon link={"https://www.linkedin.com/in/shyjijohn"}>
                         <LinkedInIcon />
                     </ButtonWithIcon>
                 </div>

@@ -26,7 +26,7 @@ export default function Contact() {
                         <div className='m-3  flex flex-row'>
                             <LinkedInIcon className='mr-3 scale-150' />
 
-                            <a className='hover:underline hover:font-semibold mr-3' href="https://www.linkedin.com/in/shyji90">linkedin.com/in/shyji90</a>
+                            <a className='hover:underline hover:font-semibold mr-3' href="https://www.linkedin.com/in/shyjijohn">linkedin.com/in/shyjijohn</a>
                         </div>
                     </div>
                 </div>

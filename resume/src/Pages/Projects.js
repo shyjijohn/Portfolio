@@ -60,7 +60,7 @@ export default function Projects() {
             <div className='w-full h-full flex flex-col justify-start items-center mr-10 ml-10'>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-3 md:mt-10">Projects</h2>
                 <div className=' w-full h-full flex flex-wrap justify-evenly pt-4 overflow-auto' >
-                    <Project title={"Travel app"} imageUrl={"images/image1.png"} internalGalleryURL={"/gallery"} notes={"* Under development 🚧"} images={['image1.png', 'image2.png', 'image3.png']} />
+                    <Project title={"Travel app"} imageUrl={"images/tourly/Andaman7.png"} internalGalleryURL={"/gallery"} notes={"* Under development 🚧"} images={['image1.png', 'image2.png', 'image3.png']} />
                     <Project title={"Gram Biller"} imageUrl={"images/gram_biller.png"} githubUrl={"https://github.com/shyjijohn/Gram-Biller"} liveDemoUrl={"https://shyjijohn.github.io/Gram-Biller/"} />
                     <Project title={"Rate grapher"} imageUrl={"images/RateGrapher.png"} githubUrl={"https://github.com/shyjijohn/Currency-Converter"} liveDemoUrl={"https://shyjijohn.github.io/Currency-Converter/"} />
                 </div>
