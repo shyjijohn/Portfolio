@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Home from './Pages/Home';
@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="flex flex-col md:items-center">
        <Router>
-      <Routes>
-        <Route path="/" element={
+        <Routes>
+        <Route exact path="/" element={
           <>
             <Home />
             <Skills/>
